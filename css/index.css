@@ -111,3 +111,100 @@ a {
 .main .answer:hover {
     background-color: rgb(165, 79, 26);
 }
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 20px;
+    width: 500px;
+    border-radius: 20px;
+}
+.close-button {
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.3s 0s, transform 0.3s;
+}
+form, form input, form textarea {
+    font-family: "ManropeRegular";
+    font-size: 24px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form p {
+    font-family: "ManropeSemiBold";
+    font-size: 24px;
+}
+form .row {
+    width: 95%;
+    margin-left: 5px;
+}
+form textarea {
+    width: 95%;
+    height: 130px;
+    resize: none;
+}
+.row input, form textarea {
+    float: right;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid gray;
+    outline: none;
+}
+.row input:active {
+    border: 3px solid gray;
+    outline: none;
+}
+.row input:focus, form textarea:focus {
+    box-shadow: 5px 0 5px 0 rgb(165, 79, 26), -5px 0 5px 0 rgb(165, 79, 26);
+}
+.preference {
+    width: 95%;
+}
+.preference input {
+    margin-left: 5px;
+}
+.preference label {
+    margin-left: 5px;
+}
+.send {
+    font-family: "ManropeRegular";
+    font-size: 22px;
+    padding: 15px 50px;
+    cursor: pointer;
+    background-color: rgb(241, 157, 84);
+    color: white;
+    border: 0;
+    margin-bottom: 15px;
+}
+.send:hover {
+     background-color: rgb(165, 79, 26);
+ }

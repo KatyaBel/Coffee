@@ -27,5 +27,50 @@
             <button class="answer" id="answer">Задать вопрос</button>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form action="" name="send" method="post">
+                <p>ЗАДАТЬ ВОПРОС</p>
+                <div class="row">
+                    <label for="fname">Имя*:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Ваше имя">
+                </div>
+                <div class="row">
+                    <label for="lname">Фамилия*:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Ваша фамилия">
+                </div>
+                <div class="row">
+                    <label for="mail">E-mail*:</label>
+                    <input type="text" id="mail" name="mail" placeholder="Ваш e-mail">
+                </div>
+                <label for="question" class="row">Ваш вопрос*:</label>
+                <textarea id="question" name="question" placeholder="Введите до 200 символов"></textarea>
+                <p>Откуда вы узнали от нас?</p>
+                <div class="preference">
+                    <input type="checkbox" name="random" id="random"/>
+                    <label for="random">Вышел на сайт случайным образом</label>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" name="smi" id="smi"/>
+                    <label for="smi">Реклама в СМИ</label>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" name="recommend" id="recommend"/>
+                    <label for="recommend">По рекомендациям друзей или знакомых</label>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" name="banner" id="banner"/>
+                    <label for="banner">По ссылке/баннеру с другого сайта</label>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" name="searchEngine" id="searchEngine"/>
+                    <label for="searchEngine">Поисковые системы в сети Интернет</label>
+                </div>
+                <button class="send">Отправить</button>
+            </form>
+
+        </div>
+    </div>
 </body>
 </html>
