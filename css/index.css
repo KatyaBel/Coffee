@@ -1,0 +1,113 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: "ManropeExtraBold";
+    src: url(../fonts/Manrope-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "ManropeBold";
+    src: url(../fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: "ManropeSemiBold";
+    src: url(../fonts/Manrope-SemiBold.ttf);
+}
+@font-face {
+    font-family: "ManropeMedium";
+    src: url(../fonts/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: "ManropeLight";
+    src: url(../fonts/Manrope-Light.ttf);
+}
+@font-face {
+    font-family: "ManropeExtraLight";
+    src: url(../fonts/Manrope-ExtraLight.ttf);
+}
+
+/*Общее*/
+* {
+    margin: auto;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    margin: 0;
+}
+body {
+    background-size: cover;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+/*Шапка*/
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px;
+}
+.logo {
+    width: 15%;
+}
+.nav {
+    font-family: "ManropeExtraLight";
+    font-size: 22px;
+    width: 85%;
+    display: flex;
+    gap: 20px;
+}
+.nav li {
+    display: inline;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+.nav li:hover {
+    background-color: rgb(165, 79, 26);
+    cursor: pointer;
+}
+.nav a {
+    color: #212121;
+    width: 100%;
+}
+.nav a:hover {
+    color: white;
+}
+
+/*Главная*/
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/main.jpeg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    padding: 0 100px;
+    text-align: center;
+}
+.main .large-text {
+    font-family: "ManropeSemiBold";
+    font-size: 90px;
+}
+.main .text {
+    font-family: "ManropeMedium";
+    font-size: 28px;
+}
+.main .answer {
+    font-family: "ManropeRegular";
+    font-size: 28px;
+    padding: 17px 120px;
+    cursor: pointer;
+    background-color: rgb(241, 157, 84);
+    color: white;
+    border: 0;
+}
+.main .answer:hover {
+    background-color: rgb(165, 79, 26);
+}
